@@ -1,5 +1,6 @@
 #include <iostream>
 
+// 哪里错了
 class Counter {
 public:
     static int object_count;
