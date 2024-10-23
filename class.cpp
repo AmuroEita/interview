@@ -2,20 +2,27 @@
 
 class Father {
 public:
-    virtual void show() {
-        std::cout << "Father class" << std::endl;
+    Father() {
+        std::cout << "Father constructor called" << std::endl;
+    }
+
+    ~Father() {
+        std::cout << "Father destructor called" << std::endl;
     }
 };
 
 class Son : public Father {
 public:
-    void show() override {
-        std::cout << "Son class" << std::endl;
+    Son() {
+        std::cout << "Son constructor called" << std::endl;
+    }
+
+    ~Son() {
+        std::cout << "Son destructor called" << std::endl;
     }
 };
 
 int main() {
-    Father* b = new Son();
-    b->show();  // 输出什么？
-    delete b;
+    Son d;
+    return 0;
 }
