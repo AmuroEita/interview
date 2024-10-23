@@ -10,7 +10,7 @@ public:
         ++count2;
     }
 
-    static int get_count() {
+    int get_count() {
         return object_count;
     }
 
